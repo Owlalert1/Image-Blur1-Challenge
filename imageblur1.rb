@@ -2,11 +2,11 @@ class Image
     attr_accessor :picture
   
     def initialize(picture)
-    self.picture = picture
-  end
+      @picture = picture
+    end
 
-  def output_image
-    self.picture.each do |data|
+    def output_image
+      @picture.each do |data|
       puts data.join
     end
   end
